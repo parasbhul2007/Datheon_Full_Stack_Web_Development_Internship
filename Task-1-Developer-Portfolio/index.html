@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Paras Bhul — BCA student and web developer portfolio."
+    />
+    <title>Paras Bhul | Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a class="logo" href="#home">PB<span>.</span></a>
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Open navigation"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+        <div class="nav-links" id="navLinks">
+          <a href="#about">About</a><a href="#skills">Skills</a
+          ><a href="#projects">Projects</a><a href="#contact">Contact</a>
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle color theme"
+          >
+            ☾
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero container" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="status-dot"></span> Available for learning
+            opportunities
+          </p>
+          <h1>Building thoughtful<br /><span>digital experiences.</span></h1>
+          <p class="intro">
+            Hi, I'm <strong>Paras Bhul</strong> — a BCA student and aspiring web
+            developer who enjoys turning ideas into useful, responsive websites.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">Explore my work ↗</a
+            ><a class="button secondary" href="#contact">Get in touch</a>
+          </div>
+          <div class="quick-facts">
+            <span>HTML · CSS · JavaScript</span><span>Based in Nepal</span>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Decorative code illustration">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="code-card">
+            <div class="code-top">
+              <i></i><i></i><i></i><span>developer.js</span>
+            </div>
+            <pre><span class="purple">const</span> developer = {
+  name: <span class="green">"Paras Bhul"</span>,
+  role: <span class="green">"Web Developer"</span>,
+  curious: <span class="orange">true</span>,
+  learning: [
+    <span class="green">"Frontend"</span>,
+    <span class="green">"Full Stack"</span>
+  ]
+};</pre>
+          </div>
+          <div class="floating-chip chip-one">✦ Creative thinking</div>
+          <div class="floating-chip chip-two">⌘ Clean code</div>
+        </div>
+      </section>
+
+      <section class="section container" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">01 / ABOUT</p>
+          <h2>A little about me</h2>
+        </div>
+        <div class="about-grid">
+          <p class="about-lead">
+            I’m focused on learning how the web works and building projects that
+            solve everyday problems.
+          </p>
+          <div class="about-detail">
+            <p>
+              I'm currently pursuing a Bachelor of Computer Applications (BCA).
+              I enjoy exploring web technologies, practicing through hands-on
+              projects, and continuously improving my development skills.
+            </p>
+            <p>
+              My approach is simple: understand the problem, build a clear
+              solution, and make the experience work well on every screen.
+            </p>
+            <a class="text-link" href="#contact">Let's connect ↗</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="skills">
+        <div class="section-heading">
+          <p class="eyebrow">02 / TOOLKIT</p>
+          <h2>Technologies I work with</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill">
+            <span>01</span><strong>HTML5</strong
+            ><small>Semantic structure</small>
+          </div>
+          <div class="skill">
+            <span>02</span><strong>CSS3</strong
+            ><small>Responsive layouts</small>
+          </div>
+          <div class="skill">
+            <span>03</span><strong>JavaScript</strong
+            ><small>Interactive experiences</small>
+          </div>
+          <div class="skill">
+            <span>04</span><strong>PHP & MySQL</strong
+            ><small>Backend fundamentals</small>
+          </div>
+          <div class="skill">
+            <span>05</span><strong>Git & GitHub</strong
+            ><small>Version control</small>
+          </div>
+          <div class="skill">
+            <span>06</span><strong>Tailwind CSS</strong
+            ><small>Utility-first styling</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="projects">
+        <div class="section-heading">
+          <p class="eyebrow">03 / SELECTED WORK</p>
+          <h2>Projects & experiments</h2>
+          <p class="muted">A few projects from my learning journey.</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-visual visual-blue">
+              <span>01</span><b>SmartStudyX</b
+              ><small>Learning platform concept</small>
+            </div>
+            <div class="project-info">
+              <h3>SmartStudyX</h3>
+              <p>
+                An education-focused website concept designed to help students
+                explore IT courses and learning resources.
+              </p>
+              <div class="tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <button class="project-more" data-project="SmartStudyX">
+                Project details ↗
+              </button>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-visual visual-violet">
+              <span>02</span><b>MeroElectronics</b
+              ><small>Electronics e-commerce project</small>
+            </div>
+            <div class="project-info">
+              <h3>MeroElectronics</h3>
+              <p>
+                An academic e-commerce project concept for browsing electronics,
+                product categories and services.
+              </p>
+              <div class="tags">
+                <span>PHP</span><span>MySQL</span><span>CSS</span>
+              </div>
+              <button class="project-more" data-project="MeroElectronics">
+                Project details ↗
+              </button>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-visual visual-green">
+              <span>03</span><b>JavaScript Lab</b
+              ><small>Small interactive apps</small>
+            </div>
+            <div class="project-info">
+              <h3>Frontend Experiments</h3>
+              <p>
+                A collection of practice projects focused on responsive design,
+                DOM manipulation and JavaScript logic.
+              </p>
+              <div class="tags">
+                <span>JavaScript</span><span>DOM</span><span>CSS</span>
+              </div>
+              <button class="project-more" data-project="Frontend Experiments">
+                Project details ↗
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="container contact-inner">
+          <p class="eyebrow">04 / CONTACT</p>
+          <h2>Have an idea or opportunity?</h2>
+          <p>
+            I'm always interested in learning, collaborating and discussing web
+            development.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:parasbhul20@gmail.com">parasbhul20@gmail.com ↗</a
+            ><a
+              href="https://github.com/parasbhul2007"
+              target="_blank"
+              rel="noreferrer"
+              >GitHub ↗</a
+            ><a
+              href="https://www.linkedin.com/in/paras-bhul-518a35418/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BjSfYYJ8YTyiYd6SpLDx4Xw%3D%3D"
+              target="_blank"
+              rel="noreferrer"
+              >LinkedIn ↗</a
+            >
+          </div>
+          <p class="edit-note">
+            Before publishing, replace the email and LinkedIn link with your own
+            details.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer container">
+      <a class="logo" href="#home">PB<span>.</span></a
+      ><span>© <span id="year"></span> Paras Bhul. Built with care.</span
+      ><a href="#home">Back to top ↑</a>
+    </footer>
+
+    <dialog id="projectDialog">
+      <button class="dialog-close" id="dialogClose" aria-label="Close">
+        ×
+      </button>
+      <p class="eyebrow">PROJECT OVERVIEW</p>
+      <h2 id="dialogTitle"></h2>
+      <p id="dialogText"></p>
+    </dialog>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A task manager with local browser persistence."
+    />
+    <title>FocusBoard | Task Manager</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="wrap nav">
+        <a class="brand" href="#">focus<span>board</span><b>.</b></a
+        ><span class="today" id="todayLabel"></span>
+      </div>
+    </header>
+    <main class="wrap app">
+      <section class="welcome">
+        <div>
+          <p class="eyebrow">YOUR PERSONAL WORKSPACE</p>
+          <h1>Make today count.</h1>
+          <p class="muted">
+            Organise your tasks, keep your focus, and make steady progress.
+          </p>
+        </div>
+        <div class="date-card">
+          <span>YOUR TASKS</span><strong id="totalCount">0</strong
+          ><small>in your workspace</small>
+        </div>
+      </section>
+      <section class="composer panel">
+        <div class="panel-title">
+          <div>
+            <p class="eyebrow">QUICK CAPTURE</p>
+            <h2>Add a new task</h2>
+          </div>
+        </div>
+        <form id="taskForm">
+          <label class="sr-only" for="taskTitle">Task title</label
+          ><input
+            id="taskTitle"
+            maxlength="100"
+            placeholder="What needs to get done?"
+            required
+          />
+          <div class="form-row">
+            <label
+              >Category<select id="taskCategory">
+                <option>Personal</option>
+                <option>Work</option>
+                <option>Study</option>
+              </select></label
+            ><label>Due date<input id="taskDue" type="date" /></label
+            ><button class="add-button" type="submit">＋ Add task</button>
+          </div>
+        </form>
+        <p class="form-message" id="formMessage" role="status"></p>
+      </section>
+      <section class="toolbar">
+        <div class="filters" role="group" aria-label="Filter tasks">
+          <button class="filter active" data-filter="All">
+            All <span id="allCount">0</span></button
+          ><button class="filter" data-filter="Active">
+            Active <span id="activeCount">0</span></button
+          ><button class="filter" data-filter="Completed">
+            Completed <span id="completedCount">0</span>
+          </button>
+        </div>
+        <input
+          class="search"
+          id="searchInput"
+          type="search"
+          placeholder="Search tasks…"
+          aria-label="Search tasks"
+        />
+      </section>
+      <section class="task-list" id="taskList" aria-live="polite"></section>
+      <footer class="app-footer">
+        <span>Tasks are saved automatically in this browser.</span
+        ><button id="clearCompleted" class="clear-button">
+          Clear completed
+        </button>
+      </footer>
+    </main>
+    <dialog id="editDialog">
+      <form method="dialog" id="editForm">
+        <p class="eyebrow">UPDATE TASK</p>
+        <h2>Edit task</h2>
+        <label
+          >Task title<input id="editTitle" required maxlength="100"
+        /></label>
+        <div class="form-row">
+          <label
+            >Category<select id="editCategory">
+              <option>Personal</option>
+              <option>Work</option>
+              <option>Study</option>
+            </select></label
+          ><label>Due date<input id="editDue" type="date" /></label>
+        </div>
+        <div class="dialog-actions">
+          <button class="cancel-button" value="cancel">Cancel</button
+          ><button class="add-button" id="saveEdit" value="save">
+            Save changes
+          </button>
+        </div>
+      </form>
+    </dialog>
+  </body>
+</html>

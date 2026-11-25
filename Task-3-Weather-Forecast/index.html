@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Live weather search and five-day forecast."
+    />
+    <title>Atmos | Weather Forecast</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="weather-clear">
+    <main class="app-shell">
+      <header class="header">
+        <a class="brand" href="#">atmos<span>.</span></a
+        ><span class="live-label"><i></i> LIVE WEATHER</span>
+      </header>
+      <section class="search-area">
+        <p class="eyebrow">WEATHER, WHEREVER YOU ARE</p>
+        <h1>See what's<br /><span>in the air.</span></h1>
+        <p class="subtitle">
+          Explore current conditions and the five-day outlook for any city.
+        </p>
+        <form id="searchForm" class="search-form">
+          <label class="sr-only" for="cityInput">Search city</label
+          ><input
+            id="cityInput"
+            placeholder="Search a city, e.g. Kathmandu"
+            autocomplete="off"
+            required
+          /><button type="submit" aria-label="Search weather">
+            Search <span>↗</span>
+          </button>
+        </form>
+        <p class="hint">Try Kathmandu, London, Tokyo or New York.</p>
+      </section>
+      <div id="status" class="status" role="status" aria-live="polite">
+        Enter a city to see its weather.
+      </div>
+      <section id="weatherContent" class="weather-content hidden">
+        <div class="current-card">
+          <div class="current-top">
+            <div>
+              <p class="eyebrow">CURRENT WEATHER</p>
+              <h2 id="cityName">Kathmandu</h2>
+              <p id="currentDate" class="current-date"></p>
+            </div>
+            <div class="weather-icon" id="currentIcon">☀️</div>
+          </div>
+          <div class="temperature-row">
+            <strong id="temperature">--°</strong>
+            <div>
+              <b id="condition">Clear sky</b
+              ><span>Feels like <span id="feelsLike">--°</span></span>
+            </div>
+          </div>
+          <div class="metrics">
+            <div><span>Humidity</span><b id="humidity">--%</b></div>
+            <div><span>Wind speed</span><b id="wind">-- m/s</b></div>
+            <div><span>Pressure</span><b id="pressure">-- hPa</b></div>
+          </div>
+        </div>
+        <div class="forecast-heading">
+          <div>
+            <p class="eyebrow">PLAN AHEAD</p>
+            <h2>5-day forecast</h2>
+          </div>
+          <span id="forecastLocation"></span>
+        </div>
+        <div id="forecast" class="forecast-grid"></div>
+      </section>
+      <footer>
+        Weather data provided by
+        <a href="https://openweathermap.org/" target="_blank" rel="noreferrer"
+          >OpenWeatherMap</a
+        >. <span>Built with Fetch API & JavaScript.</span>
+      </footer>
+    </main>
+    <div id="loader" class="loader hidden">
+      <div class="spinner"></div>
+      <span>Gathering weather data…</span>
+    </div>
+  </body>
+</html>
