@@ -52,32 +52,23 @@ Features:
 - Loading indicator, invalid-city and network error handling
 - Fetch API, async/await and try/catch
 
-### Configure the OpenWeatherMap API key
+#Technologies Used
 
-1. Create an account at https://openweathermap.org/.
-2. Generate an API key from your account.
-3. Open `Task-3-Weather-Forecast/script.js`.
-4. Replace `YOUR_OPENWEATHERMAP_API_KEY` with your key.
-5. Save and run the app using VS Code Live Server.
+HTML5
 
-The free 5-day forecast endpoint is used. Newly created API keys may take some time before they become active.
+CSS3
 
-## Run locally
+JavaScript
 
-Each project is independent:
+Fetch API
 
-1. Open its folder in VS Code.
-2. Install the **Live Server** extension if you do not have it.
-3. Right-click `index.html` and choose **Open with Live Server**.
+OpenWeatherMap API
 
-You can also open the HTML file directly for the first two projects. Use Live Server for the weather project to avoid browser-origin issues.
+Browser localStorage
 
-## Suggested GitHub repository
+Git and GitHub
 
-`Full-Stack-Web-Development-Tasks`
-
-Suggested description:
-`Three responsive web development projects: developer portfolio, CRUD task manager with localStorage, and real-time weather forecast app using OpenWeatherMap API.`
+Visual Studio Code
 
 ## Important note about "Full Stack"
 
